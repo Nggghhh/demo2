@@ -27,12 +27,16 @@ gitk&
 		git clean -xdf //delete new files/catalogues
 
 		git checkout . //discard all changes
-
+		
+		git reset HEAD~(i) //i == amount of commits to discard
+		
 		git reset --soft (commit->staging (index))
 			--mixed	(commit->file system)
 			--hard (commit->delete file)
 
 		git commit --amend
+
+		git revert <sha1> //enter sha1 of commit to discard change
 	}
 
 
@@ -40,6 +44,11 @@ gitk&
 
 	{
 		git pull //pulling stuff from repo
+	}
+
+5--gitignore
+	{
+		*.doc //ignore all files with doc extenstion
 	}
 
 new content for master
