@@ -1,0 +1,45 @@
+git keygen
+
+cd \E\Project\demo //move to directory
+
+git gui&
+
+gitk&
+
+1--creating new commit
+	{
+		git add
+		git commit -m "message"
+		git push
+	}
+
+2--branches
+	{
+		gir checkout -b //create new branch
+
+		git checkout master //go back to master branch
+
+		git merge *branch name* //merge two branches
+	}
+
+3--resetting
+	{
+		git clean -xdf //delete new files/catalogues
+
+		git checkout .  //undo all changes
+
+		git reset --soft (commit->staging (index))
+			--mixed	(commit->file system)
+			--hard (commit->delete file)
+	}
+
+
+4--pull
+
+	{
+		git pull //pulling stuff from repo
+	}
+
+new content for master
+
+new content for feature
