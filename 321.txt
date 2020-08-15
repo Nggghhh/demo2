@@ -45,5 +45,3 @@ gitk&
 new content for master
 
 new content for feature
-
-amend2
