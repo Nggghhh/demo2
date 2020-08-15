@@ -31,6 +31,8 @@ gitk&
 		git reset --soft (commit->staging (index))
 			--mixed	(commit->file system)
 			--hard (commit->delete file)
+
+		git commit --amend
 	}
 
 
@@ -43,3 +45,5 @@ gitk&
 new content for master
 
 new content for feature
+
+amend
