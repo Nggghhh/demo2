@@ -26,7 +26,7 @@ gitk&
 	{
 		git clean -xdf //delete new files/catalogues
 
-		git checkout .  //undo all changes
+		git checkout . //discard all changes
 
 		git reset --soft (commit->staging (index))
 			--mixed	(commit->file system)
