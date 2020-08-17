@@ -6,6 +6,9 @@ git gui&
 
 gitk&
 
+ctrl+insert //copy
+shift+insert //paste
+
 1--creating new commit
 	git add
 	git commit -m "message"
@@ -58,3 +61,8 @@ gitk&
 	git stash save <name> //save changes to filesystem
 	git stash --list //show all stashes with names
 	git stash apply <name> //get stash
+	
+8--remote repos
+	git remote -v //show current repo
+	git remote remove origin //disconnect from current repo
+	git remote add origin <sshCode> //connect to new repo
