@@ -44,7 +44,9 @@ gitk&
 	*.doc //ignore all files with doc extenstion
 	!bruh.doc //do not ignore that particular file if all doc files are ignored
 
-6--gitignore
+6--tags
+	git tag <tagname> //create new tag
+	git checkout <tagname> //use tag instead of sha1 to reference commit
 	git tag --list
 
 new content for master
