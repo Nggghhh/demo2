@@ -14,7 +14,7 @@ gitk&
 2--branches
 	gir checkout -b //create new branch
 	git checkout master //go back to master branch
-	git merge *branch name* //merge two branches
+	git merge <branch name to merge> //merge two branches
 
 	git branch -d localBranchName // delete branch locally
 
@@ -55,3 +55,5 @@ gitk&
 	git push --tags //push tags only
 
 EEEEEEEEEEEEEEEEEEEEEEEEEE
+
+stash2
