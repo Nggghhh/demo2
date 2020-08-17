@@ -7,50 +7,48 @@ git gui&
 gitk&
 
 1--creating new commit
-	{
-		git add
-		git commit -m "message"
-		git push
-	}
+	git add
+	git commit -m "message"
+	git push
 
 2--branches
-	{
-		gir checkout -b //create new branch
-
-		git checkout master //go back to master branch
-
-		git merge *branch name* //merge two branches
-	}
+	gir checkout -b //create new branch
+	git checkout master //go back to master branch
+	git merge *branch name* //merge two branches
 
 3--resetting
+	git clean -xdf //delete new files/catalogues
+	git checkout . //discard all changes
+	git reset HEAD~(i) //i == amount of commits to discard
+
+	git reset --soft (commit->staging (index))
+		--mixed	(commit->file system)
+		--hard (commit->delete file)
+
+	git commit --amend
+	git revert <sha1> //enter sha1 of commit to discard change
 	{
-		git clean -xdf //delete new files/catalogues
+		3.1 -- vi
+		press insert to create a message
+		press esc to end message
+		type :wq to accept changes and exit vi
+	{
 
-		git checkout . //discard all changes
-		
-		git reset HEAD~(i) //i == amount of commits to discard
-		
-		git reset --soft (commit->staging (index))
-			--mixed	(commit->file system)
-			--hard (commit->delete file)
-
-		git commit --amend
-
-		git revert <sha1> //enter sha1 of commit to discard change
-	}
 
 
 4--pull
+	git pull //pulling stuff from repo
 
-	{
-		git pull //pulling stuff from repo
-	}
 
 5--gitignore
-	{
-		*.doc //ignore all files with doc extenstion
-	}
+	*.doc //ignore all files with doc extenstion
+	!bruh.doc //do not ignore that particular file if all doc files are ignored
+
+6--gitignore
+	git tag --list
 
 new content for master
 
 new content for feature
+
+bruhmium
