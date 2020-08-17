@@ -49,8 +49,4 @@ gitk&
 	git checkout <tagname> //use tag instead of sha1 to reference commit
 	git tag --list
 
-new content for master
-
-new content for feature
-
-bruhmium
+branch
