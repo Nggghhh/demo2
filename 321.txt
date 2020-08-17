@@ -53,7 +53,8 @@ gitk&
 	git checkout <tagname> //use tag instead of sha1 to reference commit
 	git tag --list //show all tags
 	git push --tags //push tags only
-
-EEEEEEEEEEEEEEEEEEEEEEEEEE
-
-stash2
+	
+7--stash
+	git stash save <name> //save changes to filesystem
+	git stash --list //show all stashes with names
+	git stash apply <name> //get stash
