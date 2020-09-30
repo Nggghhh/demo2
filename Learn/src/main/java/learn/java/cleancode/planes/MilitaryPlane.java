@@ -5,7 +5,6 @@ import learn.java.cleancode.models.MilitaryPlaneType;
 import java.util.Objects;
 
 public class MilitaryPlane extends Plane {
-
     private MilitaryPlaneType type;
 
     public MilitaryPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, MilitaryPlaneType type) {
