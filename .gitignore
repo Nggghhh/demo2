@@ -1,6 +1,11 @@
 *.log
 *.db
 *.iml
-target/
+maven-demo/.idea
+maven-demo/target
+maven-demo/*.iml
 bin/
-.idea/
+Learn/.idea
+Learn/target
+Learn/*.iml
+
